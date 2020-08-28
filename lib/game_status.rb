@@ -26,7 +26,7 @@ def won?(board)
 
   WIN_COMBINATIONS.each do |combination|
     combination.each do |index|
-      
+
       if board[index] == "X"
         x_win += 1
 
@@ -35,7 +35,7 @@ def won?(board)
       else
         x_win = 0
       end
-      
+
       if board[index] == "O"
         o_win += 1
 
