@@ -29,12 +29,10 @@ def won?(board)
         count = 0
       end
 
-    end
+      if count == 3
+        return combination
+      end
 
-    if count == 3
-      return combination
     end
-
   end
-
 end
