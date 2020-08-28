@@ -41,6 +41,7 @@ def won?(board)
 
         if o_win == 3
           return combination
+        end
       else
         o_win = 0
       end
