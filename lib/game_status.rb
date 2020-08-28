@@ -18,17 +18,13 @@ WIN_COMBINATIONS = [
 # won method : returns true if there is a winner; else if not
 def won?(board)
 
-
-
-  # loops through the board array and checks if there is an empty value
-  # board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
     # loops through the 2D array WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combination|
 
       # flags
       x_win = 0
       o_win = 0
-      
+
       combination.each do |index|
 
         # checks if player X wins
