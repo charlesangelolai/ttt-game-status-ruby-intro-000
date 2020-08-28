@@ -72,3 +72,8 @@ end
 def draw?(board)
   !won?(board)
 end
+
+# over method
+def draw?(board)
+  !won?(board)
+end
