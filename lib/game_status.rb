@@ -52,6 +52,6 @@ def won?(board)
       end
     end
 
-    # returns false if there is no winner
+    # return false if there is no winner
     return false
 end
