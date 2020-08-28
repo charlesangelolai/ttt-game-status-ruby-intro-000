@@ -56,7 +56,7 @@ def won?(board)
     return false
 end
 
-# full method : returns true if every element in the board contains a value "X" or "O"
+# full method : accepts the array "board" and returns true if every element in the board contains a value "X" or "O"
 def full?(board)
   board.each do |values|
     if values == " " || values == ""
@@ -66,3 +66,5 @@ def full?(board)
     end
   end
 end
+
+# draw method : accepts the array "board" and returns true if the board has not been won but is full
