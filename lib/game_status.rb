@@ -75,5 +75,5 @@ end
 
 # over method
 def over?(board)
-  !won?(board)
+  won?(board)
 end
