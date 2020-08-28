@@ -27,7 +27,7 @@ def won?(board)
     return false
   else
 
-    # loops through the 2D array
+    # loops through the 2D array WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combination|
       combination.each do |index|
 
