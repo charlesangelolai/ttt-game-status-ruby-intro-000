@@ -24,6 +24,7 @@ def won?(board)
   # board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
     # loops through the 2D array WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combination|
+      
       # flags
       x_win = 0
       o_win = 0
