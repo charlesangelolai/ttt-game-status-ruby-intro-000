@@ -36,4 +36,7 @@ def won?(board)
       end
       if board[index] == "O"
         o_win += 1
+
+        if o_win == 3
+          return combination
 end
