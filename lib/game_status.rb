@@ -18,6 +18,7 @@ WIN_COMBINATIONS = [
 # won method : returns true if there is a winner; else if not
 def won?(board)
   board.each do |combination|
+    count = 0
     combination.each do |value|
       if value == "X"
         count += 1
@@ -25,4 +26,5 @@ def won?(board)
         count = 0
       end
     end
+
 end
