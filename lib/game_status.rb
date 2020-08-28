@@ -19,11 +19,6 @@ WIN_COMBINATIONS = [
 def won?(board)
   board.each do |combination|
     counter = 0
-    combination.each do |value|
-      if value == "X"
-        counter += 1
-      else
-        counter = 0
-      end
+    if combination[0] == "X" && combination[1] == "X" && combination[2] == "X"
   end
 end
