@@ -55,3 +55,5 @@ def won?(board)
     # return false if there is no winner
     return false
 end
+
+# full method : returns true if every element in the board contains a value "X" or "O"
