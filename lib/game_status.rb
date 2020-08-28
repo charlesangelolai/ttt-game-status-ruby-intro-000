@@ -21,5 +21,7 @@ def won?(board)
     counter = 0
     if combination[0] == "X" && combination[1] == "X" && combination[2] == "X"
       return combination
+    else
+      false
   end
 end
