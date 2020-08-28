@@ -22,6 +22,7 @@ def won?(board)
 
   if board.empty?
     return false
+
   end
 
   WIN_COMBINATIONS.each do |combination|
