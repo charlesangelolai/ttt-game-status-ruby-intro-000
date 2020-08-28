@@ -34,4 +34,5 @@ def won?(board)
     if count == 3
       return combination
     end
+  end
 end
