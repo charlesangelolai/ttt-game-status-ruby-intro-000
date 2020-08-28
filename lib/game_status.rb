@@ -44,7 +44,6 @@ def won?(board)
       else
         o_win = 0
       end
-      
+
     end
   end
-end
