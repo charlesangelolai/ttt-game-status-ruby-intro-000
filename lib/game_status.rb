@@ -70,7 +70,10 @@ end
 # draw method : accepts the array "board" and returns true if the board has not been won but is full
 # might be redundant for the solution I coded, but we'll call the function #won? for this again
 def draw?(board)
-  !won?(board)
+  if full?(board) && !won?(board)
+    return true
+  else
+    false
 end
 
 # over method : accepts the array "board" and returns true if board has been won, is a draw, or is full
@@ -78,7 +81,7 @@ def over?(board)
   if won?(board)
     return true
   elsif draw?(board)
-    return false
+
   else
     false
   end
