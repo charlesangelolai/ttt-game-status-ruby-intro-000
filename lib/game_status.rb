@@ -87,6 +87,7 @@ def over?(board)
   end
 end
 
+# won method" accepts board and returns the token "X" or "O" indicating the winner
 def winner(board)
   if won?(board)
     return board[won?(board)[0]]
