@@ -20,5 +20,6 @@ def won?(board)
   board.each do |combination|
     counter = 0
     if combination[0] == "X" && combination[1] == "X" && combination[2] == "X"
+      return combination
   end
 end
