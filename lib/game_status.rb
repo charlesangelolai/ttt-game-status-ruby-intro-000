@@ -32,7 +32,7 @@ def won?(board)
           x_win += 1
 
           if x_win == 3
-            return combination[0]
+            return combination
           end
         else
           x_win = 0
@@ -43,7 +43,7 @@ def won?(board)
           o_win += 1
 
           if o_win == 3
-            return combination[0]
+            return combination
           end
         else
           o_win = 0
@@ -88,9 +88,9 @@ def over?(board)
 end
 
 def winner(board)
-  if won?(board) == "X"
+  if won?(board) == ["X", "X", "X"]
     return "X"
-  elsif won?(board) == "O"
+  elsif won?(board) == ["O", "O", "O"]
     return "O"
   else
     return nil
