@@ -20,4 +20,5 @@ def won?(board)
   board.each do |combination|
     if combination.empty?
       return false
+    end
 end
