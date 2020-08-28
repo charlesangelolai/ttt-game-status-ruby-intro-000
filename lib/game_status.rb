@@ -75,5 +75,5 @@ end
 
 # over method
 def draw?(board)
-  won?(board)
+  !won?(board)
 end
