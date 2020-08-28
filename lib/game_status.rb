@@ -34,4 +34,6 @@ def won?(board)
       else
         x_win = 0
       end
+      if board[index] == "O"
+        o_win += 1
 end
