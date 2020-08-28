@@ -17,20 +17,7 @@ WIN_COMBINATIONS = [
 
 # won method : returns true if there is a winner; else if not
 def won?(board)
-  for each win_index in WIN_COMBINATIONS
-    win_index_1 = win_index[0]
-    win_index_2 = win_index[1]
-    win_index_3 = win_index[2]
-
-    position_1 = board[win_index_1]
-    position_2 = board[win_index_2]
-    position_3 = board[win_index_3]
-
-    if position_1 == "X" && position_2 == "X" && position_3 == "X"
-      return win_combination
-    elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-    else
-      false
-    end
-  end
+  board.each do |combination|
+    if combination.empty?
+      return false
 end
