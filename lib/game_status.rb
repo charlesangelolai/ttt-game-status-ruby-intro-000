@@ -62,7 +62,7 @@ def full?(board)
     if values == "X" || values == "O"
       return true
     else
-      return false
+      false
     end
   end
 end
