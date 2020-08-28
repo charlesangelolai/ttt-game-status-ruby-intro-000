@@ -22,5 +22,7 @@ def won?(board)
     combination.each do |value|
       if value == "X" || value == "O"
         counter += 1
+      else
+        counter = 0
   end
 end
