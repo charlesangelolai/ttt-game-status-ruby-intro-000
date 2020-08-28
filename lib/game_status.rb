@@ -23,7 +23,7 @@ def won?(board)
   o_win = 0
 
   # loops through the board array and checks if there is an empty value
-
+board = ["X", "O", "X", "O", "X", "X", "O", "X", "O"]
     # loops through the 2D array WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combination|
       combination.each do |index|
@@ -52,5 +52,6 @@ def won?(board)
 
       end
     end
+
     return false
 end
