@@ -19,20 +19,5 @@ WIN_COMBINATIONS = [
 def won?(board)
   board.each do |combination|
 
-    count = 0
-
-    combination.each do |value|
-
-      if value == "X" || value == "O"
-        count += 1
-      else
-        count = 0
-      end
-
-      if count == 3
-        return combination
-      end
-
-    end
   end
 end
