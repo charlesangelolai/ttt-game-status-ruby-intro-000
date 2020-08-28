@@ -21,6 +21,7 @@ def won?(board)
     WIN_COMBINATIONS.each do |win_combination|
       if combination == win_combination
         true
+        break
       else
         false
   end
