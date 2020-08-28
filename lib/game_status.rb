@@ -68,6 +68,7 @@ def full?(board)
 end
 
 # draw method : accepts the array "board" and returns true if the board has not been won but is full
+# might be redundant for the solution I coded, but we'll call the function #won? for this again
 def draw?(board)
   !won?(board)
 end
