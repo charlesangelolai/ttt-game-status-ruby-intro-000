@@ -21,4 +21,5 @@ def won?(board)
     if combination.empty?
       return false
     end
+  end
 end
