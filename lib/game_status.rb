@@ -23,4 +23,5 @@ def won?(board)
         count += 1
       else
         count = 0
+      end
 end
