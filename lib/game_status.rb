@@ -19,7 +19,7 @@ WIN_COMBINATIONS = [
 def won?(board)
   board.each do |combination|
     if combination.empty?
-      return false
+      false
     end
   end
 end
