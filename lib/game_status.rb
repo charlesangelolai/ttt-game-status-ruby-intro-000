@@ -22,32 +22,38 @@ def won?(board)
   x_win = 0
   o_win = 0
 
-  # loops through the 2D array WIN_COMBINATIONS
-  WIN_COMBINATIONS.each do |combination|
-    combination.each do |index|
+  # checks if board is empty
+  board.each do |value|
+    if value != "X" || "O"
+      return false
 
-      # checks if player X wins
-      if board[index] == "X"
-        x_win += 1
+    # loops through the 2D array WIN_COMBINATIONS
+    WIN_COMBINATIONS.each do |combination|
+      combination.each do |index|
 
-        if x_win == 3
-          return combination
+        # checks if player X wins
+        if board[index] == "X"
+          x_win += 1
+
+          if x_win == 3
+            return combination
+          end
+        else
+          x_win = 0
         end
-      else
-        x_win = 0
-      end
 
-      # checks if player O wins
-      if board[index] == "O"
-        o_win += 1
+        # checks if player O wins
+        if board[index] == "O"
+          o_win += 1
 
-        if o_win == 3
-          return combination
+          if o_win == 3
+            return combination
+          end
+        else
+          o_win = 0
         end
-      else
-        o_win = 0
-      end
 
+      end
     end
   end
 end
