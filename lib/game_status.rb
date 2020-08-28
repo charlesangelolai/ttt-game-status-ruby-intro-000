@@ -76,6 +76,6 @@ end
 # over method : accepts the array "board" and returns true if board has been won, is a draw, or is full
 def over?(board)
   if won?(board) == true && full?(board) == true && !draw(board) == true
-    return false
+    return true
   end
 end
