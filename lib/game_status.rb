@@ -75,5 +75,6 @@ end
 
 # over method
 def over?(board)
-  won?(board)
+  if full?(board) == true && won?(board) == true
+    return true
 end
