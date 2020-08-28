@@ -23,7 +23,7 @@ def won?(board)
 
     combination.each do |value|
 
-      if value == "X"
+      if value == "X" || value == "O"
         count += 1
       else
         count = 0
@@ -36,5 +36,5 @@ def won?(board)
     end
 
   end
-  
+
 end
