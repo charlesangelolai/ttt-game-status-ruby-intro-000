@@ -18,7 +18,7 @@ WIN_COMBINATIONS = [
 # won method : returns true if there is a winner; else if not
 def won?(board)
   x_win = 0
-  y_win = 0
+  o_win = 0
 
   if board.empty?
     return false
