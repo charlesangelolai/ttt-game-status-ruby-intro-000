@@ -26,6 +26,7 @@ def won?(board)
   board.each do |value|
     if value != "X" || "O"
       return false
+    end
 
     # loops through the 2D array WIN_COMBINATIONS
     WIN_COMBINATIONS.each do |combination|
