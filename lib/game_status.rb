@@ -26,6 +26,8 @@ def won?(board)
   if board.empty?
     return false
   else
+
+    # loops through the 2D array
     WIN_COMBINATIONS.each do |combination|
       combination.each do |index|
 
@@ -50,7 +52,7 @@ def won?(board)
         else
           o_win = 0
         end
-        
+
       end
     end
   end
