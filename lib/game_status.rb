@@ -32,6 +32,7 @@ def won?(board)
 
         if x_win == 3
           return combination
+        end
       else
         x_win = 0
       end
