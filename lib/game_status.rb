@@ -17,7 +17,7 @@ WIN_COMBINATIONS = [
 
 # won method : returns true if there is a winner; else if not
 def won?(board)
-  each.WIN_COMBINATIONS do |win_index|
+  for each win_index in WIN_COMBINATIONS
     win_index_1 = win_index[0]
     win_index_2 = win_index[1]
     win_index_3 = win_index[2]
