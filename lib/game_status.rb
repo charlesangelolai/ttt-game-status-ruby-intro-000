@@ -22,9 +22,9 @@ def won?(board)
   x_win = 0
   o_win = 0
 
-  # checks if board is empty
+  # loops through the board array and checks if there is an empty value
   board.each do |value|
-    if value != "X" || "O"
+    if value == " " || ""
       return false
     end
 
