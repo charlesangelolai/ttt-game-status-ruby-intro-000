@@ -74,6 +74,7 @@ def draw?(board)
     return true
   else
     return false
+  end
 end
 
 # over method : accepts the array "board" and returns true if board has been won, is a draw, or is full
